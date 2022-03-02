@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/', index);
-app.all('/users', userRouter);
+app.use('/users', userRouter);
 
 
 
